@@ -1,0 +1,77 @@
+<head>
+<meta charset="UTF-8">
+<style>
+figure{
+	width:371px;
+	height:286px;
+	margin:20px 20px;	
+	border:1px solid #666;
+	position:relative;
+	float:left;
+}
+img{display:block;}
+
+figcaption{
+	display:none;
+	position:absolute;
+	left:55%;top:14px;
+	width:200px;
+	padding:10px;
+	background:#f2eaea;
+	border:3px solid red;
+	border-radius:6px;
+
+}
+figure:hover figcaption{display:block;z-index:2;}
+
+figcaption h3{
+	font-size:14px;
+	color:#666;
+	margin-bottom;
+}
+
+figcaption a{
+	display:block;
+	text-decoration:none;
+	font-szie:12px;	
+	color:#000;
+}
+figcaption::after{
+	content:"";
+	position:absolute;
+	border:12px solid;
+	border-color:transparent red transparent transparent;
+	right:100%; top:17px;
+	height:0px; 
+	width:0px;
+}
+
+
+</style>
+</head>
+<body>
+<figure>
+	<img src="12.png"/>
+	<figcaption>
+		<h3>PINK</h3>
+		<a href="javascript:(0)">aaa</a>
+	</figcaption>
+</figure>
+<figure class="click_me">
+	<img src="12.png">
+	<figcaption>
+		<h3>PINK</h3>
+		<a href="javascript:(0)">bbb</a>
+	</figcaption>
+</figure>
+<figure class="click_me">
+	<img src="12.png">
+	<figcaption>
+		<h3>PINK</h3>
+		<a href="javascript:(0)">ccc</a>
+	</figcaption>
+</figure>
+
+
+
+</body>
